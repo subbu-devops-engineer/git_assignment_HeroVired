@@ -11,13 +11,17 @@ class Calculator:
     def multiply(self, a, b):
         return a * b
 
+    # ✅ Fixed divide function
     def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero.")
         return a / b
 
     # Square root function
     def square_root(self, x):
         return math.sqrt(x)
     
+
 if __name__ == "__main__":
 
     calculator = Calculator()
