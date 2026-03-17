@@ -12,16 +12,12 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
-        if b == 0:
-            raise ValueError("Cannot divide by zero.")
         return a / b
-
 
     # Square root function
     def square_root(self, x):
         return math.sqrt(x)
     
-
 if __name__ == "__main__":
 
     calculator = Calculator()
@@ -36,4 +32,4 @@ if __name__ == "__main__":
 
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
-    print("Square root feature ready")
+    print("Feature branch update")
